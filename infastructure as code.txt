@@ -1,0 +1,10 @@
+The definition of infrastructure as code (IaC) is right there in the name. It uses code to describe how to provision and configure infrastructure. It’s most often associated with cloud infrastructures like Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft’s Azure.
+
+IaC eliminates the tedious and time-consuming process of manually creating and configuring servers. Even though cloud platforms provide tools for saving or snapshotting cloud resources, provisioning new systems by hand is costly and error prone. Tools like Terraform allow you to describe your system in JSON to create it by simply running a script. Ansible serves a similar role with its YAML configurations.
+
+While automating tedious tasks is a significant advantage, it’s not the only reason to use IaC. You can version code. That means you can deploy a change, roll it back, and deploy it again. It also gives you a way to compare two different deployments and figure out what went wrong or right.
+
+Additionally, it means that you can make your infrastructure configuration available to your CI/CD pipeline.
+
+A build and deploy pipeline for user acceptance testing (UAT) creates the systems it deploys the new code to. When the testing is complete, you shut it down and remove it until the next iteration. A canary release does the same.
+nfrastructure as code (IaC) and continuous integration / continuous deployment (CI/CD) don’t seem to go together. They represent two completely different processes, don’t they? One is a mechanism for defining how you configure and build your hardware; the other is for building, testing, and deploying your software
